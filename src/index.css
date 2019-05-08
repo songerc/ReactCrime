@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.leftPanel {
+  background-color: blue;
+  opacity: .7;
+}
+
+.esri-zoom {
+  display: none !important;
+}

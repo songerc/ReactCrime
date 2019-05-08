@@ -864,6 +864,16 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@esri/react-arcgis@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@esri/react-arcgis/-/react-arcgis-4.0.0.tgz#afc58a33329c12bc7b363d7767f560ac83f09100"
+  integrity sha512-Svb/CDOEnqSEcDmN88uAxbJ664l/pLfJ0HOlQxbTpe3dFrCN9Ey+eBgBFdZojppKEDQjZYiS3Ok5soIyBozqyQ==
+  dependencies:
+    "@types/arcgis-js-api" "4.10.0"
+    esri-loader "2.6.0"
+    react "^16.5.2"
+    react-dom "^16.5.2"
+
 "@jest/console@^24.7.1":
   version "24.7.1"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.7.1.tgz#32a9e42535a97aedfe037e725bd67e954b459545"
@@ -1125,6 +1135,11 @@
     "@svgr/plugin-jsx" "^4.1.0"
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
+
+"@types/arcgis-js-api@4.10.0":
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@types/arcgis-js-api/-/arcgis-js-api-4.10.0.tgz#0e702500904e473e57a2d6d4bdae179bf07fe676"
+  integrity sha512-r8Ax7+s0+VbUw+dwROFFmdhLTeKBwECWIQQecTGDRR9VY02m8qVH++gZio52p5Av7DJi7IaYrwY3U5eU2brkxA==
 
 "@types/babel__core@^7.1.0":
   version "7.1.1"
@@ -3591,6 +3606,11 @@ esrecurse@^4.1.0:
   integrity sha512-64RBB++fIOAXPw3P9cy89qfMlvZEXZkqqJkjqqXIvzP5ezRZjW+lPWjw35UX/3EhUPFYbg5ER4JYgDw4007/DQ==
   dependencies:
     estraverse "^4.1.0"
+
+esri-loader@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/esri-loader/-/esri-loader-2.6.0.tgz#fc44cc8888161937e48346c4eb069433686fddc3"
+  integrity sha512-XY9ItlT6+5UVy0s5AS89YRVRKmMm7DqOD3f/jp/8Xxoapp6ffw79RbUnWFuM8qjYb1EewkjSwFMS+2ZAdkXzMA==
 
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
@@ -7832,7 +7852,7 @@ react-dev-utils@^9.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@16.8.6:
+react-dom@^16.5.2, react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -7910,7 +7930,7 @@ react-scripts@3.0.0:
   optionalDependencies:
     fsevents "2.0.6"
 
-react@16.8.6:
+react@^16.5.2, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
