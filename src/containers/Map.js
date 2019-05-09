@@ -2,6 +2,7 @@ import React from 'react';
 import { Map } from '@esri/react-arcgis';
 import OffensePanel from './OffensePanel';
 import FeatureLayer from '../components/FeatureLayer';
+import Menu from './Menu';
 const style = {
     "position": "absolute",
     "zIndex": 12
@@ -13,10 +14,9 @@ class MapView extends React.Component {
         this.state = {
             map: null, 
             view: null,
-            features: [],
-            offenses: ['Arson', 'Assault', 'Burglary', 'Disturbing the Peace', 'Drugs/Narcotics'],
-            lis: []
+            features: []
         };
+        this.handleClick = this.handleClick.bind(this);
     }
     componentDidMount() {
         this._isMounted = true;
@@ -26,12 +26,6 @@ class MapView extends React.Component {
                 const newState = data.features.slice(0,150);
                 this.setState({features: newState});
             });
-        let li = this.state.offenses.map((offense, i) => {
-            return (
-                <li key={offense+'_'+i} className='list-group-item'>{offense} <input type="checkbox" id="test"/></li>
-            )
-        });
-        this.setState({lis: li});
     }
     componentWillUnmount() {
         this._isMounted = false;
@@ -40,12 +34,13 @@ class MapView extends React.Component {
         }
         console.log("unmounted");
     }
+    handleClick() {
+        document.getElementById('panelWrapper').classList.toggle('active');
+    }
     render() {
         return (
             <div id="root2">
-                <div className="leftPanel" style={style}>
-                    <OffensePanel lis={this.state.lis}/>
-                </div>
+                <Menu />
                 <Map
                     mapProperties={{ basemap: 'streets'}}
                     viewProperties={{
